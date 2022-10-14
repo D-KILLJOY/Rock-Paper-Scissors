@@ -18,11 +18,12 @@ let cScore = 0;
 let pScore = 0;
 
 const playerName = prompt(
-	"INPUT YOUR NAME \n name should be at least 2 characters long"
+	"INPUT YOUR NAME \n name should be at least 2 characters long and should not start with a space"
 );
 
 if (playerName == null) {
 	alert("You selected CANCEL \n You will be addressed as PLAYER");
+	playerName = "player";
 } else if (playerName.length < 1 || playerName.startsWith(" ")) {
 	alert("You didn't input a valid name \n You will be addressed as PLAYER");
 	playerName = "player";
