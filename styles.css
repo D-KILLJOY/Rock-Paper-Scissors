@@ -53,6 +53,7 @@ h1 {
 	text-align: center;
 	color: blue;
 	margin-bottom: 1rem;
+	text-transform: uppercase;
 }
 
 .score {

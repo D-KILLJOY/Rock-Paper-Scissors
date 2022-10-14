@@ -8,6 +8,7 @@ const playerScore = document.querySelector(".player-score");
 const playerImg = document.querySelector(".player-img-con");
 const playerImgName = document.querySelector(".player-image-name");
 const playerChoice = document.querySelectorAll(".btn");
+const pName = document.querySelector(".player-name");
 
 let choice = "";
 let compChoices = ["rock", "paper", "scissors"];
@@ -15,6 +16,18 @@ let computerChoice = "";
 let stat = "";
 let cScore = 0;
 let pScore = 0;
+
+const playerName = prompt(
+	"INPUT YOUR NAME \n name should be at least 2 characters long"
+);
+
+if (playerName.length < 1 || playerName.startsWith(" ")) {
+	alert("You didn't input a valid name \n You will be addressed as PLAYER");
+	playerName = "player";
+	pName.textContent = playerName;
+} else {
+	pName.textContent = playerName;
+}
 
 for (let i = 0; i < playerChoice.length; i++) {
 	playerChoice[i].addEventListener("click", addChoice);
@@ -45,7 +58,7 @@ function validate() {
 			message.style.color = "#f00";
 			cScore++;
 		} else {
-			stat = "player wins";
+			stat = `${playerName} wins`;
 			message.style.color = "green";
 			pScore++;
 		}
@@ -56,7 +69,7 @@ function validate() {
 
 			cScore++;
 		} else {
-			stat = "player wins";
+			stat = `${playerName} wins`;
 			message.style.color = "green";
 			pScore++;
 		}
@@ -66,7 +79,7 @@ function validate() {
 			message.style.color = "#f00";
 			cScore++;
 		} else {
-			stat = "player wins";
+			stat = `${playerName} wins`;
 			message.style.color = "green";
 			pScore++;
 		}
