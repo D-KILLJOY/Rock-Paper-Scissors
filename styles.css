@@ -85,6 +85,8 @@ h1 {
 .stat-message {
 	font-weight: 900;
 	color: gray;
+	word-wrap: break-word;
+	-ms-word-wrap: break-word;
 	font-size: 1.6rem;
 	text-align: center;
 	margin: 1rem 0;

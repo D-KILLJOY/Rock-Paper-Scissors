@@ -29,6 +29,10 @@ if (playerName == null) {
 	alert("You didn't input a valid name \n You will be addressed as PLAYER");
 	playerName = "player";
 	pName.textContent = playerName;
+} else if (playerName.length > 15) {
+	alert("Name too long \n You will be addressed as PLAYER");
+	playerName = "player";
+	pName.textContent = playerName;
 } else {
 	pName.textContent = playerName;
 }
