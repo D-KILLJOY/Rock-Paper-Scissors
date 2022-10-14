@@ -21,7 +21,9 @@ const playerName = prompt(
 	"INPUT YOUR NAME \n name should be at least 2 characters long"
 );
 
-if (playerName.length < 1 || playerName.startsWith(" ")) {
+if (playerName == null) {
+	alert("You selected CANCEL \n You will be addressed as PLAYER");
+} else if (playerName.length < 1 || playerName.startsWith(" ")) {
 	alert("You didn't input a valid name \n You will be addressed as PLAYER");
 	playerName = "player";
 	pName.textContent = playerName;
