@@ -17,7 +17,7 @@ let stat = "";
 let cScore = 0;
 let pScore = 0;
 
-const playerName = prompt(
+let playerName = prompt(
 	"INPUT YOUR NAME \n name should be at least 2 characters long and should not start with a space"
 );
 
