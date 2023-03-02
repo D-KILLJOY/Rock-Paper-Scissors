@@ -8,9 +8,9 @@
 
 img {
 	display: block;
-	width: 14rem;
 	margin: 0 auto;
 	scale: 0;
+	width: 100%;
 	animation: showImg 0.5s ease-out forwards;
 }
 
@@ -51,11 +51,6 @@ h1 {
 	min-height: 30rem;
 }
 
-.computer img,
-.player img {
-	width: 10rem;
-}
-
 .link {
 	text-align: center;
 	margin: 1rem 0;
@@ -90,7 +85,7 @@ h1 {
 .comp-img-con,
 .player-img-con {
 	margin: 0 auto;
-	width: fit-content;
+	width: 13rem;
 }
 
 .comp-image-name,
